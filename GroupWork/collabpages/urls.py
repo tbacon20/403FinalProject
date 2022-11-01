@@ -1,5 +1,5 @@
 from operator import index
-from django.urls import path 
+from django.urls import path
 from .views import indexPageView, dueDatesPageView
 from .views import IS401PageView, IS402PageView, IS403PageView, IS415PageView
 
