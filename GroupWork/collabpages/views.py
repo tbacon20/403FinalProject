@@ -3,19 +3,19 @@ from django.http import HttpResponse
 
 # Create your views here.
 def indexPageView(request) : 
-    return HttpResponse('Welcome Group 2-8')
+    return render(request, 'classpages/index.html')
 
 def dueDatesPageView(request) : 
-    return HttpResponse('Uh oh, you got stuff to do!')
+    return render(request, 'classpages/duedates.html')
 
 def IS401PageView(request) : 
-    return HttpResponse("Uh oh, you're about to be bored!")
+    return render(request, 'classpages/is401.html')
 
 def IS402PageView(request) : 
-    return HttpResponse("Uh oh, you only have 5 minutes to finish your test!")
+    return render(request, 'classpages/is402.html')
 
 def IS403PageView(request) : 
-    return HttpResponse('Uh oh, better be ready to google!')
+    return render(request, 'classpages/is403.html')
 
 def IS415PageView(request) : 
-    return HttpResponse('Uh oh, better be ready to copy and paste!')
+    return render(request, 'classpages/is415.html')
