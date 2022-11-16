@@ -2,22 +2,30 @@
 {% load static %}
 {% block content %}
 <!-- About-->
-<div class="container">
-    <div class="text-center">
-        <h2 class="section-heading text-uppercase">IS401</h2>
+<form class="container fullform">
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            {% for sName in classes %} 
+            <option>{{ sName }}</option> 
+            {% endfor %}
+        </select>
     </div>
-    <ul class="timeline">
-        <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/42096.jpg' %}" width="600" height="600" alt="" /></div>
-
-            <div class="timeline-panel">
-                <div class="timeline-heading">
-                    <a href="https://www.freepik.com/vectors/business">Business vector created by macrovector - www.freepik.com</a>
-                    <h4 class="subheading">Traveling around the world!</h4>
-                </div>
-                <div class="timeline-body"><p class="text-muted">Let us build a memory that you will always remember.</p></div>
-            </div>
-        </li>                    
-    </ul>
-</div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Assignment Title</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Assignment Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Due Date</label>
+        <input type="date" id="exampleFormDatearea1"></input>       
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+    </div>
+</form>
 {% endblock %}

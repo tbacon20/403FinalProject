@@ -1953,6 +1953,11 @@ pre code {
   border: 0;
 }
 
+.fullform {
+  background-color: #b3b7bb;
+  border-radius: 10px;
+  width: 500px;
+}
 .form-control {
   display: block;
   width: 100%;
@@ -9969,6 +9974,11 @@ h3 {
 }
 body {
   overflow-x: hidden;
+  background-image: url("../img/byu.jfif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
 
 p {
@@ -10109,11 +10119,6 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10417,7 +10422,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/byu.jfif");
   background-repeat: no-repeat;
   background-position: center;
 }
